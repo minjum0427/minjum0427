@@ -8,12 +8,42 @@
 </head>
 <body>
 
+  <!-- SVG 심볼 정의 (숨김) -->
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <symbol id="dolphin-svg">
+      <defs>
+        <clipPath id="dc"><circle cx="100" cy="100" r="100"/></clipPath>
+      </defs>
+      <circle cx="100" cy="100" r="100" fill="#061830"/>
+      <g clip-path="url(#dc)">
+        <circle cx="30" cy="45" r="4" fill="none" stroke="#4a9eff" stroke-width="1.5" opacity="0.35"/>
+        <circle cx="45" cy="28" r="2.5" fill="none" stroke="#4a9eff" stroke-width="1.5" opacity="0.25"/>
+        <circle cx="165" cy="48" r="3" fill="none" stroke="#4a9eff" stroke-width="1.5" opacity="0.3"/>
+        <circle cx="172" cy="158" r="3.5" fill="none" stroke="#4a9eff" stroke-width="1.5" opacity="0.3"/>
+        <path d="M -5 150 Q 50 142 100 150 Q 150 158 205 150 L 205 205 L -5 205 Z" fill="#0a2d5a" opacity="0.55"/>
+        <path d="M 52 150 Q 32 134 38 120 Q 54 136 60 148 Z" fill="#4a8aaa"/>
+        <path d="M 52 150 Q 30 164 34 178 Q 52 164 60 148 Z" fill="#3a7a9a"/>
+        <path d="M 60 148 C 78 124,104 100,136 78 C 152 66,168 58,180 62 C 188 66,188 74,182 78 C 168 74,152 72,136 84 C 104 106,78 130,62 154 Z" fill="#5c9db8"/>
+        <path d="M 62 154 C 78 130,104 106,136 84 C 150 74,166 72,178 80 C 170 90,158 88,144 94 C 112 110,86 134,68 158 Z" fill="#c5e3ee"/>
+        <path d="M 116 90 C 124 66,140 56,148 72 C 138 76,128 82,120 90 Z" fill="#4a8aaa"/>
+        <path d="M 100 112 C 86 130,78 146,76 156 C 90 142,106 126,108 112 Z" fill="#4a8aaa"/>
+        <path d="M 180 62 C 186 54,198 58,196 68 C 190 66,184 66,180 70 Z" fill="#6aaac4"/>
+        <circle cx="176" cy="65" r="7" fill="#0f1f30"/>
+        <circle cx="178" cy="63" r="2.5" fill="#fff"/>
+        <path d="M 186 74 Q 194 82 190 88" stroke="#0f1f30" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <circle cx="148" cy="170" r="16" fill="#4a9eff" opacity="0.92"/>
+        <text x="148" y="175" text-anchor="middle" font-size="16" fill="#fff">✈</text>
+      </g>
+    </symbol>
+  </svg>
+
   <!-- 네비게이션 -->
   <nav class="navbar">
     <span class="nav-logo">MJ.KIM</span>
     <ul class="nav-links">
       <li><a href="#about">소개</a></li>
       <li><a href="#skills">기술</a></li>
+      <li><a href="#projects">프로젝트</a></li>
       <li><a href="#contact">연락처</a></li>
     </ul>
   </nav>
@@ -23,40 +53,7 @@
     <div class="hero-content">
       <div class="hero-avatar">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" aria-label="돌고래 프로필">
-          <defs>
-            <clipPath id="dc1"><circle cx="100" cy="100" r="100"/></clipPath>
-          </defs>
-          <circle cx="100" cy="100" r="100" fill="#061830"/>
-          <g clip-path="url(#dc1)">
-            <!-- 배경 거품 -->
-            <circle cx="30" cy="45" r="4" fill="none" stroke="#4a9eff" stroke-width="1.5" opacity="0.35"/>
-            <circle cx="45" cy="28" r="2.5" fill="none" stroke="#4a9eff" stroke-width="1.5" opacity="0.25"/>
-            <circle cx="165" cy="48" r="3" fill="none" stroke="#4a9eff" stroke-width="1.5" opacity="0.3"/>
-            <circle cx="172" cy="158" r="3.5" fill="none" stroke="#4a9eff" stroke-width="1.5" opacity="0.3"/>
-            <!-- 수면 -->
-            <path d="M -5 150 Q 50 142 100 150 Q 150 158 205 150 L 205 205 L -5 205 Z" fill="#0a2d5a" opacity="0.55"/>
-            <!-- 꼬리 지느러미 -->
-            <path d="M 52 150 Q 32 134 38 120 Q 54 136 60 148 Z" fill="#4a8aaa"/>
-            <path d="M 52 150 Q 30 164 34 178 Q 52 164 60 148 Z" fill="#3a7a9a"/>
-            <!-- 몸통 등쪽 -->
-            <path d="M 60 148 C 78 124,104 100,136 78 C 152 66,168 58,180 62 C 188 66,188 74,182 78 C 168 74,152 72,136 84 C 104 106,78 130,62 154 Z" fill="#5c9db8"/>
-            <!-- 몸통 배쪽 -->
-            <path d="M 62 154 C 78 130,104 106,136 84 C 150 74,166 72,178 80 C 170 90,158 88,144 94 C 112 110,86 134,68 158 Z" fill="#c5e3ee"/>
-            <!-- 등지느러미 -->
-            <path d="M 116 90 C 124 66,140 56,148 72 C 138 76,128 82,120 90 Z" fill="#4a8aaa"/>
-            <!-- 가슴지느러미 -->
-            <path d="M 100 112 C 86 130,78 146,76 156 C 90 142,106 126,108 112 Z" fill="#4a8aaa"/>
-            <!-- 주둥이 -->
-            <path d="M 180 62 C 186 54,198 58,196 68 C 190 66,184 66,180 70 Z" fill="#6aaac4"/>
-            <!-- 눈 -->
-            <circle cx="176" cy="65" r="7" fill="#0f1f30"/>
-            <circle cx="178" cy="63" r="2.5" fill="#fff"/>
-            <!-- 미소 -->
-            <path d="M 186 74 Q 194 82 190 88" stroke="#0f1f30" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- 항공 배지 -->
-            <circle cx="148" cy="170" r="16" fill="#4a9eff" opacity="0.92"/>
-            <text x="148" y="175" text-anchor="middle" font-size="16" fill="#fff">✈</text>
-          </g>
+          <use href="#dolphin-svg"/>
         </svg>
       </div>
       <p class="hero-subtitle">항공SW 프로그램 개발자</p>
@@ -81,24 +78,7 @@
           <div class="biz-front">
             <div class="biz-logo">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="biz-avatar">
-                <defs>
-                  <clipPath id="dc2"><circle cx="100" cy="100" r="100"/></clipPath>
-                </defs>
-                <circle cx="100" cy="100" r="100" fill="#061830"/>
-                <g clip-path="url(#dc2)">
-                  <path d="M -5 150 Q 50 142 100 150 Q 150 158 205 150 L 205 205 L -5 205 Z" fill="#0a2d5a" opacity="0.55"/>
-                  <path d="M 52 150 Q 32 134 38 120 Q 54 136 60 148 Z" fill="#4a8aaa"/>
-                  <path d="M 52 150 Q 30 164 34 178 Q 52 164 60 148 Z" fill="#3a7a9a"/>
-                  <path d="M 60 148 C 78 124,104 100,136 78 C 152 66,168 58,180 62 C 188 66,188 74,182 78 C 168 74,152 72,136 84 C 104 106,78 130,62 154 Z" fill="#5c9db8"/>
-                  <path d="M 62 154 C 78 130,104 106,136 84 C 150 74,166 72,178 80 C 170 90,158 88,144 94 C 112 110,86 134,68 158 Z" fill="#c5e3ee"/>
-                  <path d="M 116 90 C 124 66,140 56,148 72 C 138 76,128 82,120 90 Z" fill="#4a8aaa"/>
-                  <path d="M 180 62 C 186 54,198 58,196 68 C 190 66,184 66,180 70 Z" fill="#6aaac4"/>
-                  <circle cx="176" cy="65" r="7" fill="#0f1f30"/>
-                  <circle cx="178" cy="63" r="2.5" fill="#fff"/>
-                  <path d="M 186 74 Q 194 82 190 88" stroke="#0f1f30" stroke-width="2" fill="none" stroke-linecap="round"/>
-                  <circle cx="148" cy="170" r="16" fill="#4a9eff" opacity="0.92"/>
-                  <text x="148" y="175" text-anchor="middle" font-size="16" fill="#fff">✈</text>
-                </g>
+                <use href="#dolphin-svg"/>
               </svg>
             </div>
             <div class="biz-info">
@@ -167,6 +147,25 @@
           <div class="skill-icon">⚙️</div>
           <h3>임베디드 개발</h3>
           <p>항공 탑재 소프트웨어 설계 및 구현</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 프로젝트 -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">프로젝트</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-icon">🎯</div>
+          <h3>JDAM 연동 항공기SW 개선</h3>
+          <p>무장 투하 절차 오류를 분석하고 절차 흐름을 재설계하여 안전성을 개선</p>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">📡</div>
+          <h3>GPS 시현기능 개선</h3>
+          <p>GPS 수신상태 관련 PVI 표시 로직을 개선하여 조종사 상황 인식 향상</p>
         </div>
       </div>
     </div>
