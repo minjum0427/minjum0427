@@ -1,18 +1,40 @@
+# 김민준 | 항공SW 개발자 포트폴리오
 
-![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=привет%20Мир!&fontSize=90)
-### Hi there 👋
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fminjum0427%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-<!--
-**minjum0427/minjum0427** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+항공 소프트웨어 개발자 김민준의 자기소개 웹 페이지입니다.
 
-Here are some ideas to get you started:
+## 소개
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+DO-178C 항공 안전 표준을 준수하며 임베디드 시스템 개발에 집중하는 항공 소프트웨어 개발자입니다.
+
+## 구성
+
+- **Hero** — 이름, 직함, 프로필(돌고래 SVG), 연락하기 버튼, 명함 보기 모달
+- **소개(About)** — 자기소개 문단
+- **기술(Skills)** — DO-178C, C 언어, Jovial, 임베디드 개발 카드
+- **연락처(Contact)** — 전화번호 링크
+
+## 기술 스택
+
+| 항목 | 내용 |
+|------|------|
+| 마크업 | HTML5 |
+| 스타일 | CSS3 (Flexbox / Grid, CSS 변수) |
+| 인터랙션 | Vanilla JavaScript |
+| 빌드 도구 | 없음 (정적 파일) |
+
+## 파일 구조
+
+```
+day1/
+├── index.html   # 단일 페이지 진입점
+├── style.css    # 모든 스타일 (CSS 변수, 반응형)
+└── script.js    # 스크롤 효과, 명함 모달 등
+```
+
+## 실행 방법
+
+`index.html`을 브라우저에서 직접 열면 됩니다. 별도 서버나 빌드 과정이 없습니다.
+
+## 연락처
+
+- 전화: 010-2034-9401
