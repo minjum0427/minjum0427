@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김민준 | 항공SW 개발자</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 네비게이션 -->
+  <nav class="navbar">
+    <span class="nav-logo">MJ.KIM</span>
+    <ul class="nav-links">
+      <li><a href="#about">소개</a></li>
+      <li><a href="#skills">기술</a></li>
+      <li><a href="#contact">연락처</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-avatar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" aria-label="돌고래 프로필">
+          <defs>
+            <clipPath id="dc1"><circle cx="100" cy="100" r="100"/></clipPath>
+          </defs>
+          <circle cx="100" cy="100" r="100" fill="#061830"/>
+          <g clip-path="url(#dc1)">
+            <!-- 배경 거품 -->
+            <circle cx="30" cy="45" r="4" fill="none" stroke="#4a9eff" stroke-width="1.5" opacity="0.35"/>
+            <circle cx="45" cy="28" r="2.5" fill="none" stroke="#4a9eff" stroke-width="1.5" opacity="0.25"/>
+            <circle cx="165" cy="48" r="3" fill="none" stroke="#4a9eff" stroke-width="1.5" opacity="0.3"/>
+            <circle cx="172" cy="158" r="3.5" fill="none" stroke="#4a9eff" stroke-width="1.5" opacity="0.3"/>
+            <!-- 수면 -->
+            <path d="M -5 150 Q 50 142 100 150 Q 150 158 205 150 L 205 205 L -5 205 Z" fill="#0a2d5a" opacity="0.55"/>
+            <!-- 꼬리 지느러미 -->
+            <path d="M 52 150 Q 32 134 38 120 Q 54 136 60 148 Z" fill="#4a8aaa"/>
+            <path d="M 52 150 Q 30 164 34 178 Q 52 164 60 148 Z" fill="#3a7a9a"/>
+            <!-- 몸통 등쪽 -->
+            <path d="M 60 148 C 78 124,104 100,136 78 C 152 66,168 58,180 62 C 188 66,188 74,182 78 C 168 74,152 72,136 84 C 104 106,78 130,62 154 Z" fill="#5c9db8"/>
+            <!-- 몸통 배쪽 -->
+            <path d="M 62 154 C 78 130,104 106,136 84 C 150 74,166 72,178 80 C 170 90,158 88,144 94 C 112 110,86 134,68 158 Z" fill="#c5e3ee"/>
+            <!-- 등지느러미 -->
+            <path d="M 116 90 C 124 66,140 56,148 72 C 138 76,128 82,120 90 Z" fill="#4a8aaa"/>
+            <!-- 가슴지느러미 -->
+            <path d="M 100 112 C 86 130,78 146,76 156 C 90 142,106 126,108 112 Z" fill="#4a8aaa"/>
+            <!-- 주둥이 -->
+            <path d="M 180 62 C 186 54,198 58,196 68 C 190 66,184 66,180 70 Z" fill="#6aaac4"/>
+            <!-- 눈 -->
+            <circle cx="176" cy="65" r="7" fill="#0f1f30"/>
+            <circle cx="178" cy="63" r="2.5" fill="#fff"/>
+            <!-- 미소 -->
+            <path d="M 186 74 Q 194 82 190 88" stroke="#0f1f30" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <!-- 항공 배지 -->
+            <circle cx="148" cy="170" r="16" fill="#4a9eff" opacity="0.92"/>
+            <text x="148" y="175" text-anchor="middle" font-size="16" fill="#fff">✈</text>
+          </g>
+        </svg>
+      </div>
+      <p class="hero-subtitle">항공SW 프로그램 개발자</p>
+      <h1 class="hero-name">김민준</h1>
+      <p class="hero-tagline">"안전하고 신뢰할 수 있는 항공 소프트웨어를 만드는 개발자"</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">연락하기</a>
+        <button class="btn btn-outline" id="cardBtn">명함 보기</button>
+      </div>
+    </div>
+    <div class="hero-icon">✈</div>
+  </section>
+
+  <!-- 명함 모달 -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="biz-card">
+        <div class="biz-card-inner">
+
+          <!-- 앞면 -->
+          <div class="biz-front">
+            <div class="biz-logo">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="biz-avatar">
+                <defs>
+                  <clipPath id="dc2"><circle cx="100" cy="100" r="100"/></clipPath>
+                </defs>
+                <circle cx="100" cy="100" r="100" fill="#061830"/>
+                <g clip-path="url(#dc2)">
+                  <path d="M -5 150 Q 50 142 100 150 Q 150 158 205 150 L 205 205 L -5 205 Z" fill="#0a2d5a" opacity="0.55"/>
+                  <path d="M 52 150 Q 32 134 38 120 Q 54 136 60 148 Z" fill="#4a8aaa"/>
+                  <path d="M 52 150 Q 30 164 34 178 Q 52 164 60 148 Z" fill="#3a7a9a"/>
+                  <path d="M 60 148 C 78 124,104 100,136 78 C 152 66,168 58,180 62 C 188 66,188 74,182 78 C 168 74,152 72,136 84 C 104 106,78 130,62 154 Z" fill="#5c9db8"/>
+                  <path d="M 62 154 C 78 130,104 106,136 84 C 150 74,166 72,178 80 C 170 90,158 88,144 94 C 112 110,86 134,68 158 Z" fill="#c5e3ee"/>
+                  <path d="M 116 90 C 124 66,140 56,148 72 C 138 76,128 82,120 90 Z" fill="#4a8aaa"/>
+                  <path d="M 180 62 C 186 54,198 58,196 68 C 190 66,184 66,180 70 Z" fill="#6aaac4"/>
+                  <circle cx="176" cy="65" r="7" fill="#0f1f30"/>
+                  <circle cx="178" cy="63" r="2.5" fill="#fff"/>
+                  <path d="M 186 74 Q 194 82 190 88" stroke="#0f1f30" stroke-width="2" fill="none" stroke-linecap="round"/>
+                  <circle cx="148" cy="170" r="16" fill="#4a9eff" opacity="0.92"/>
+                  <text x="148" y="175" text-anchor="middle" font-size="16" fill="#fff">✈</text>
+                </g>
+              </svg>
+            </div>
+            <div class="biz-info">
+              <p class="biz-role">항공SW 프로그램 개발자</p>
+              <h2 class="biz-name">김민준</h2>
+              <p class="biz-tagline">안전하고 신뢰할 수 있는<br>항공 소프트웨어를 만드는 개발자</p>
+            </div>
+            <div class="biz-contact">
+              <span>📞 010-2034-9401</span>
+            </div>
+          </div>
+
+          <!-- 뒷면 -->
+          <div class="biz-back">
+            <p class="biz-back-title">기술 스택</p>
+            <ul class="biz-skills">
+              <li>📋 DO-178C 항공 안전 표준</li>
+              <li>💻 C 언어</li>
+              <li>🛩 Jovial</li>
+              <li>⚙️ 임베디드 개발</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <p class="biz-hint">카드를 클릭하면 뒤집어집니다</p>
+    </div>
+  </div>
+
+  <!-- 소개 -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">소개</h2>
+      <div class="about-card">
+        <p>
+          저는 <strong>항공 소프트웨어 개발자 김민준</strong>입니다.<br />
+          국제 항공 소프트웨어 안전 표준인 <strong>DO-178C</strong>를 준수하며
+          임베디드 시스템 개발에 집중하고 있습니다.<br />
+          안전성과 신뢰성이 최우선인 항공 도메인에서 검증된 소프트웨어를 설계하고 구현합니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 기술 -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">기술 스택</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">📋</div>
+          <h3>DO-178C</h3>
+          <p>항공 소프트웨어 안전 표준 준수 개발</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>C 언어</h3>
+          <p>임베디드 시스템 저수준 프로그래밍</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🛩</div>
+          <h3>Jovial</h3>
+          <p>항공·국방 분야 전문 언어</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>임베디드 개발</h3>
+          <p>항공 탑재 소프트웨어 설계 및 구현</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 연락처 -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">연락처</h2>
+      <div class="contact-card">
+        <p class="contact-label">📞 전화</p>
+        <a class="contact-value" href="tel:01020349401">010-2034-9401</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 김민준. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
