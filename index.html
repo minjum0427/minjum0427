@@ -186,6 +186,43 @@
     <p>© 2026 김민준. All rights reserved.</p>
   </footer>
 
+  <!-- 고정 로켓 -->
+  <div class="main-plane rocket" id="mainPlane" title="클릭하면 로켓이 발사돼요!">
+    <svg viewBox="0 0 80 160" xmlns="http://www.w3.org/2000/svg" width="80" height="120">
+      <!-- 노즈콘 (빨강) -->
+      <polygon points="40,5 30,35 50,35" fill="#ff3333"/>
+      <!-- 노즈콘 음영 -->
+      <polygon points="40,5 35,35 40,35" fill="#cc0000" opacity="0.8"/>
+
+      <!-- 동체 (검은색 금속) -->
+      <rect x="25" y="35" width="30" height="90" fill="#1a1a2a" rx="3"/>
+      <!-- 동체 음영 -->
+      <polygon points="25,35 25,125 28,125 28,35" fill="#0a0a1a"/>
+
+      <!-- 윈도우 (포트홀) -->
+      <circle cx="40" cy="50" r="3" fill="#4db8ff" opacity="0.8"/>
+      <circle cx="40" cy="70" r="3" fill="#4db8ff" opacity="0.8"/>
+      <circle cx="40" cy="90" r="3" fill="#4db8ff" opacity="0.8"/>
+
+      <!-- 꼬리날개 좌측 (주황색) -->
+      <polygon points="25,105 10,130 25,120" fill="#ff6600"/>
+      <polygon points="25,105 8,132 25,120" fill="#ff3300" opacity="0.7"/>
+
+      <!-- 꼬리날개 우측 (주황색) -->
+      <polygon points="55,105 70,130 55,120" fill="#ff6600"/>
+      <polygon points="55,105 72,132 55,120" fill="#ff3300" opacity="0.7"/>
+
+      <!-- 엔진 분사구 (좌) -->
+      <rect x="28" y="125" width="6" height="25" fill="#0a0a0a" rx="1"/>
+      <!-- 엔진 분사구 (우) -->
+      <rect x="46" y="125" width="6" height="25" fill="#0a0a0a" rx="1"/>
+
+      <!-- 엔진 링 -->
+      <circle cx="31" cy="125" r="4" fill="#444" opacity="0.6"/>
+      <circle cx="49" cy="125" r="4" fill="#444" opacity="0.6"/>
+    </svg>
+  </div>
+
   <script src="script.js" defer></script>
 </body>
 </html>

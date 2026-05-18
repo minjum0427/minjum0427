@@ -519,6 +519,124 @@ body {
   color: var(--color-text-muted);
 }
 
+/* 고정 로켓 */
+.main-plane {
+  position: fixed;
+  right: calc(100vw / 3 - 70px);
+  bottom: 33vh;
+  z-index: 20;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: bottom 0.7s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+  filter: drop-shadow(0 4px 12px rgba(255, 102, 0, 0.5));
+  transform: rotate(-15deg);
+  will-change: transform;
+}
+
+.main-plane:hover {
+  opacity: 1;
+}
+
+.main-plane.climbing {
+  filter: drop-shadow(0 6px 20px rgba(255, 102, 0, 0.8));
+}
+
+/* 로켓 불 효과 (클릭할 때만) */
+.main-plane.rocket.firing::before {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 50px;
+  background: linear-gradient(180deg, #ff6600 0%, #ffaa00 40%, #ffff00 70%, transparent 100%);
+  border-radius: 50% 50% 30% 30%;
+  filter: drop-shadow(0 0 8px #ff6600);
+  animation: rocket-fire 0.5s ease-out;
+  pointer-events: none;
+}
+
+.main-plane.rocket.firing::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 35%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 35px;
+  background: linear-gradient(180deg, #ffaa00 0%, #ff6600 50%, transparent 100%);
+  border-radius: 50% 50% 20% 20%;
+  filter: drop-shadow(0 0 6px #ff3300);
+  animation: rocket-fire-side 0.5s ease-out;
+  pointer-events: none;
+}
+
+@keyframes rocket-fire {
+  0% {
+    height: 30px;
+    opacity: 1;
+    transform: translateX(-50%) scaleX(0.8);
+  }
+  50% {
+    height: 60px;
+    opacity: 1;
+  }
+  100% {
+    height: 80px;
+    opacity: 0;
+    transform: translateX(-50%) scaleX(0.6);
+  }
+}
+
+@keyframes rocket-fire-side {
+  0% {
+    height: 20px;
+    opacity: 1;
+    right: auto;
+    left: 35%;
+  }
+  100% {
+    height: 50px;
+    opacity: 0;
+    left: 20%;
+  }
+}
+
+/* 카운터 */
+.plane-counter {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  z-index: 500;
+  transition: transform 0.15s ease;
+  font-weight: 700;
+}
+
+.plane-counter.pulse {
+  animation: counter-pulse 0.3s ease;
+}
+
+.plane-counter-num {
+  color: var(--color-primary);
+  min-width: 1.5ch;
+}
+
+@keyframes counter-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
 /* 반응형 */
 @media (max-width: 600px) {
   .navbar {
